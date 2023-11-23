@@ -1,0 +1,106 @@
+/* Estilo CSS en styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    justify-content: center; /* Centrar horizontalmente en el eje X */
+    align-items: center; /* Centrar verticalmente en el eje Y */
+    background: linear-gradient(to bottom, #1a503e, #000000); /* Definir un fondo graduado */
+    height: 100vh; /* Hacer que el cuerpo ocupe toda la altura de la ventana */
+}
+
+/*Div contenedor padre*/
+.calculadora {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family:   'Bell MT',Georgia, 'Times New Roman', Times, serif;
+    color: #000407;
+}
+.number{
+    height: 300px;
+}
+label, input {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    background-color: #ff5733;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+input[type="range"] {
+    width: 300px;
+    height: 30px; 
+    
+}
+
+/* Cambia el aspecto del control en navegadores basados en WebKit (como Chrome y Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+    /* Cambia el color del riel del control */
+    background: #b8dabf;
+    /* Define el grosor de la barra */
+    height: 20px; /* Aumenta la altura para hacer la barra más gruesa */
+    /* Añade bordes redondeados al riel */
+    border-radius: 5px;
+  }
+  /*Ventana emergente detallando la cuenta*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-logo{
+    text-align: center;   
+}
+
+.logo{
+	width: 200px;
+	height: 200px;
+}
+
+.popup-contenido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#cerrarVentana {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
